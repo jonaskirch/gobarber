@@ -22,7 +22,6 @@ export default function auth(state = INITIAL_STATE, action) {
       }
 
       case '@auth/SIGN_FAILURE': {
-        // draft.profile = action.payload.usr;
         draft.loading = false;
         break;
       }
