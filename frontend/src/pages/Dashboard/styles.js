@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  max-width: 900px;
+  max-width: 600px;
   margin: 50px auto;
 
   display: flex;
@@ -28,7 +28,7 @@ export const Container = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 15px;
-    margin: 30px 15px 0 15px;
+    margin-top: 30px;
   }
 `;
 
@@ -36,7 +36,6 @@ export const Time = styled.li`
   padding: 20px;
   border-radius: 4px;
   background: #fff;
-  width: 100%;
 
   opacity: ${props => (props.past ? 0.6 : 1)};
 
