@@ -7,6 +7,8 @@ import { Container } from './styles';
 
 export default function AvatarInput() {
   const { defaultValue, registerField } = useField('avatar');
+  console.tron.log(`df: ${defaultValue && defaultValue.id}`);
+  console.tron.log(`rf: ${defaultValue && defaultValue.url}`);
   const [file, setFile] = useState(defaultValue && defaultValue.id);
   const [preview, setPreview] = useState(defaultValue && defaultValue.url);
 
